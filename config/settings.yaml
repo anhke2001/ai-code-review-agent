@@ -1,0 +1,14 @@
+model:
+  name: "mimo-v2.5-pro"
+  temperature: 0.2
+  max_tokens: 30000
+  top_p: 0.9
+
+agents:
+  diff_analyzer:
+    role: "Senior Syntax Specialist"
+  context_retriever:
+    vector_db: "ChromaDB"
+    top_k: 5
+  review_engine:
+    focus: ["security", "performance", "clean-code"]
